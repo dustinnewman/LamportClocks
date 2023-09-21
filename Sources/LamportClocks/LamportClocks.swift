@@ -111,6 +111,6 @@ class Process: Identifiable {
     }
     
     func queue(from: Process, time: Int) {
-        inbox.insert((from, time), at: 0)
+        inbox.append((from, time))
     }
 }
